@@ -17,9 +17,10 @@ body {
     border: none;
     border-radius: 48px;
     padding: 10px 30px;
-    
+
 
 }
+
 .btn-secondary {
     background-color: #4EC5F7;
     color: #FFF;
@@ -95,6 +96,39 @@ nav {
 }
 
 /* banner */
+.banner {
+    max-width: 1440px;
+    /* border: 5px solid #000000; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.background-shape {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    max-width: 50%;
+}
+
+.banner-texts {
+    width: 50%;
+    /* border: 3px solid #ff0101; */
+
+}
+
+.banner-img {
+    width: 50%;
+    /* border: 4px solid #4c00ff; */
+}
+
+.banner-img img {
+    width: 80%;
+}
+
 
 .subtitle {
     color: #0B0223;
@@ -113,32 +147,7 @@ nav {
     text-transform: uppercase;
 }
 
-.banner {
-    max-width: 1440px;
-    margin: 0 auto;
-    height: 550px;
-    /* border: #511edf solid; */
-    display: flex;
-    justify-content: space-around;
-
-    
-}
-.banner .banner-content{
-
-
-
-}
-.banner-content{
-    /* border: #0B0223 solid; */
-    margin-top: 100px;
-    justify-content: space-between;
-    position: relative;
-    bottom: 0px ;
-    right: 0px;
-
-}
-
-.banner-content ul li {
+.banner-texts ul li {
     list-style-type: none;
     line-height: 2;
     color: #534C64;
@@ -146,47 +155,141 @@ nav {
     font-weight: 500;
 
 }
-.text-buttons{
+.card-section{
+    font-size: 2rem;
+text-align: center;
+margin: 150px 30px 0;
+color: #0B0223;
+font-family: Work Sans;
+font-size: 2rem;
+font-weight: 700;
+
+
 
 }
-.banner-img img{
-    position: absolute;
-    z-index: -1;
-    top: 100px;
-    left: 0;
-    /* object-fit: cover; */
-    width: 50%;
-    /* height: 60%; */
-}
-.banner-side-image{
-    height: 600px;
-}
-/* .banner-side-image img{
+.main-c{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 10px;
 
-    width: 100%;
-    border: #0B0223 solid;
 
-} */
+}
+.gradiennt-text {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.card-paragraph{
+font-size: 1rem;
+color: #534C64;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+}
+.card-section{
+   
+
+}
+
 
 /* Mobile device media  */
 @media screen and (max-width:576px) {
 
     .nav-container,
-    .other-options {
+    .other-options,
+    .banner {
         flex-direction: column;
+        text-align: center;
     }
+
+    .nav {
+        background-color: none;
+        box-shadow: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    .background-shape {
+        position: absolute;
+        top: 550px;
+        left: 0;
+        z-index: -1;
+
+    }
+
+    .banner-img {
+        width: 100%;
+        background-color: #ffffff;
+        margin: 60px;
+        /* border: 4px solid #4c00ff; */
+    }
+
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+.main-c{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px 15px;
+}
+
 
 }
 
 /* tablet device media  */
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav {
-        margin: 0 5%;
+
+    .nav-container,
+    .other-options,
+    .banner {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .nav-container{
+    .nav {
+        background-color: none;
+        box-shadow: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    .background-shape {
+        position: absolute;
+        top: 750px;
+        left: 0;
+        z-index: -1;
+        width: 100px;
+
+    }
+
+    .banner-img {
+        width: 100%;
+        background-color: #ffffff;
+        margin: 60px;
+        /* border: 4px solid #4c00ff; */
+    }
+
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+    .main-c{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5px 15px;
+    }
     
-    flex-direction: column;}
+
 
 
 }
