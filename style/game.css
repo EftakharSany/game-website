@@ -116,15 +116,25 @@ nav {
 .banner {
     max-width: 1440px;
     margin: 0 auto;
-    height: 500px;
-    border: #511edf solid;
+    height: 550px;
+    /* border: #511edf solid; */
+    display: flex;
+    justify-content: space-around;
+
     
 }
 .banner .banner-content{
 
+
+
 }
 .banner-content{
-    border: #0B0223 solid;
+    /* border: #0B0223 solid; */
+    margin-top: 100px;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0px ;
+    right: 0px;
 
 }
 
@@ -145,12 +155,18 @@ nav {
     top: 100px;
     left: 0;
     /* object-fit: cover; */
-    width: 40%;
-    height: 60%;
- 
-
-
+    width: 50%;
+    /* height: 60%; */
 }
+.banner-side-image{
+    height: 600px;
+}
+/* .banner-side-image img{
+
+    width: 100%;
+    border: #0B0223 solid;
+
+} */
 
 /* Mobile device media  */
 @media screen and (max-width:576px) {
